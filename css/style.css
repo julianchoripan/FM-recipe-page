@@ -68,13 +68,13 @@ li {
   margin-bottom: 10px;
 }
 main {
-  max-width: 1024px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 0px 30px 40px;
   background-color: var(--color-white);
 }
 #hero {
-  max-width: 1024px;
+  max-width: 720px;
   margin: 0 auto;
   padding-bottom: 30px;
   background-color: var(--color-white);
@@ -135,7 +135,7 @@ td:nth-child(1) {
 
 /* media query desktop */
 
-@media (min-width: 1024px) {
+@media (min-width: 720px) {
   main {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
