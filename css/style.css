@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-stone100: hsl(30, 54%, 90%);
+  --color-stone150: hsl(30, 18%, 87%);
+  --color-stone600: hsl(30, 10%, 34%);
+  --color-stone900: hsl(24, 5%, 18%);
+
+  --color-brown800: hsl(14, 45%, 36%);
+
+  --color-rose800: hsl(332, 51%, 32%);
+  --color-rose50: hsl(330, 100%, 98%);
+}
+
+body {
+  background-color: var(--color-stone100);
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  color: var(--color-stone600);
+}
+
+h1,
+h2,
+ul,
+ol,
+p,
+hr {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: xx-large;
+  color: var(--color-stone900);
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: x-large;
+  color: var(--color-brown800);
+}
+
+b {
+  font-weight: bold;
+  color: var(--color-stone600);
+}
+ul:last-child,
+ol:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+li {
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0px 30px 40px;
+  background-color: var(--color-white);
+}
+#hero {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  background-color: var(--color-white);
+}
+
+#hero img {
+  display: block;
+  width: 100%;
+  max-height: 35vh;
+  object-fit: cover;
+}
+
+#card {
+  background-color: var(--color-rose50);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+#card p {
+  margin-bottom: 20px;
+  font-size: larger;
+  font-weight: 600;
+  color: var(--color-rose800);
+}
+
+#card li::marker {
+  color: var(--color-rose800);
+}
+
+#ingredients li::marker,
+#instructions li::marker {
+  color: var(--color-brown800);
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px 60px;
+  vertical-align: middle;
+  text-align: left;
+  border-bottom: 1px solid black;
+  font-weight: 400;
+}
+
+td:nth-child(2) {
+  padding-left: 0;
+  color: var(--color-brown800);
+  font-weight: bold;
+}
+
+td:nth-child(1) {
+  padding-right: 0;
+}
+
+/* media query desktop */
+
+@media (min-width: 1024px) {
+  main {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 60px;
+  }
+  #hero {
+    background-color: var(--color-white);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 60px;
+    padding-bottom: 0;
+  }
+  #hero img {
+    padding: 30px;
+    border-radius: 40px;
+  }
+}
